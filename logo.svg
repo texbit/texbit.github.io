@@ -15,7 +15,7 @@
       </linearGradient>
     </defs>
     <rect x="0" y="0" width="32" height="32" fill="#000000"/>
-    <rect x="9.5" y="11" width="13" height="10" rx="1.2" fill="url(#silver)"/>
-    <path d="M 11 13 Q 13.5 14 16 15.2 Q 18.5 14 21 13 Q 18.5 15.8 16 17.8 Q 13.5 15.8 11 13 Z" fill="url(#vgrad)" stroke="none"/>
+    <rect x="8.85" y="10.5" width="14.3" height="11" rx="1.1" fill="url(#silver)"/>
+    <polygon points="10.53,12.7 16,17.93 21.03,12.7 16,15.08" fill="url(#vgrad)"/>
   </svg>
 </svg>
