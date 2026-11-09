@@ -1,72 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="32"
-     height="32"
-     viewBox="0 0 32 32">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
   <defs>
-    <!-- Main V gradient -->
-    <linearGradient id="front"
-      x1="3" y1="5" x2="29" y2="15"
-      gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#087FE9"/>
-      <stop offset="0.48" stop-color="#9020E8"/>
-      <stop offset="1" stop-color="#16C9C1"/>
+    <!-- Silver gradient - na silver din -->
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BEBEBE"/>
+      <stop offset="25%" stop-color="#EDEDED"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#C9C9C9"/>
+      <stop offset="100%" stop-color="#A9A9A9"/>
     </linearGradient>
-
-    <!-- Rear crossing lines -->
-    <linearGradient id="rear"
-      x1="3" y1="20" x2="29" y2="20"
-      gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#16C9E7"/>
-      <stop offset="0.5" stop-color="#278FE9"/>
-      <stop offset="1" stop-color="#4659E7"/>
+    <!-- V gradient - blue -> purple -> cyan -->
+    <linearGradient id="vgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E8FFF"/>
+      <stop offset="50%" stop-color="#7A1FF5"/>
+      <stop offset="100%" stop-color="#00D4E8"/>
     </linearGradient>
   </defs>
 
-  <!-- Black rounded rectangle -->
-  <rect
-    x="0.5"
-    y="5.5"
-    width="31"
-    height="21"
-    rx="1.8"
-    fill="#050505"/>
+  <!-- Background - baki -->
+  <rect x="0" y="0" width="32" height="32" fill="#000000"/>
 
-  <!-- Rear left and right crossing ribbons -->
-  <path
-    d="M2.1 25
-       L11.1 15.5
-       Q12.1 14.4 13.2 15.2
-       L16 17.5
-       L14.8 18.5
-       L12.2 16.8
-       L3 25.6 Z"
-    fill="url(#rear)"/>
+  <!-- Silver envelope - a tsakiya -->
+  <rect x="11" y="12" width="10" height="8" rx="1.2" fill="url(#silver)"/>
 
-  <path
-    d="M17.2 18.5
-       L18.8 16.8
-       L28.9 25.6
-       L29.9 25
-       L20.9 15.5
-       Q19.9 14.4 18.8 15.2
-       L16 17.5 Z"
-    fill="url(#rear)"/>
-
-  <!-- Main V-shaped TEXBIT symbol -->
-  <path
-    d="M3.3 8
-       L16 18
-       L28.7 8
-       Q29.5 7.4 30 8.2
-       Q30.4 8.9 29.7 9.5
-       L17.1 19.8
-       Q16 20.7 14.9 19.8
-       L2.3 9.5
-       Q1.6 8.9 2 8.2
-       Q2.5 7.4 3.3 8 Z"
-    fill="url(#front)"/>
-
+  <!-- V - daidai yadda yake -->
+  <polyline points="13.2,14.2 16,17.2 18.8,14.2"
+    fill="none"
+    stroke="url(#vgrad)"
+    stroke-width="0.9"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
 </svg>
-
